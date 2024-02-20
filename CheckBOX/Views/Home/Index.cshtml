@@ -1,0 +1,68 @@
+﻿@*@{
+    ViewBag.Title = "Home Page";
+}*@
+
+<body ng-app="myApp">
+    <div class="jumbotron" ng-controller="ReportCtrl" ng-init="InitFunction();">
+        <h3>Report Type</h3>
+
+        <div class="row">
+            <div class="col-md-5">
+                <div class="checkbox">
+                    <input type="checkbox" name="repttypes" id="chk-all" ng-model="selectAll" ng-change="toggleAll()">
+                    <label for="chk-all">SELECT ALL</label>
+                </div>
+
+            </div>
+            <form class="report-1">
+                <div class="col-md-4" ng-repeat="reporttype in reporttypes">
+                    <input type="checkbox" name="currency" id="chk-{{reporttype.id}}" ng-model="options[$index]" ng-value="reporttype" ng-change="toggleTypes($index)">
+                    <label for="chk-{{reporttype.id}}">{{reporttype.symbol}}</label>
+                </div>
+            </form>
+        </div>
+
+        <div class="result-rpt">
+            <h3> Selected</h3>
+            <div>
+                <span ng-repeat-start="option in reporttypes | filter: {checked:true}">{{option.id}} - {{option.name}}</span>
+                <br ng-repeat-end>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="~/Scripts/angular.min.js"></script>
+    @*<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.10/angular.min.js"></script>*@
+    <script src="~/Scripts/app.js"></script>
+    <script src="~/Scripts/HomeService.js"></script>
+
+</body>
+<style>
+    html, body {
+        padding: 0;
+        margin: 0;
+        height: 100%;
+    }
+
+    div.jumbotron {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100%;
+        background-color: lavender;
+    }
+
+    div.col-md-4 {
+        width: 100%;
+    }
+
+    .col-md-5 {
+        margin-left: 20px;
+    }
+
+    .report-1 {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+   
+</style>
