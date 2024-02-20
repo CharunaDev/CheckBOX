@@ -151,7 +151,6 @@ D:\Projects\CheckBOX\CheckBOX\CheckBOX\bin\System.Web.WebPages.Razor.xml
 D:\Projects\CheckBOX\CheckBOX\CheckBOX\bin\Newtonsoft.Json.xml
 D:\Projects\CheckBOX\CheckBOX\CheckBOX\bin\Antlr3.Runtime.pdb
 D:\Projects\CheckBOX\CheckBOX\CheckBOX\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-D:\Projects\CheckBOX\CheckBOX\CheckBOX\obj\Debug\CheckBOX.csproj.AssemblyReference.cache
 D:\Projects\CheckBOX\CheckBOX\CheckBOX\obj\Debug\CheckBOX.csproj.CoreCompileInputs.cache
 D:\Projects\CheckBOX\CheckBOX\CheckBOX\obj\Debug\CheckBOX.csproj.CopyComplete
 D:\Projects\CheckBOX\CheckBOX\CheckBOX\obj\Debug\CheckBOX.dll

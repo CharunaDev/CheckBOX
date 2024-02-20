@@ -21,7 +21,6 @@
                 </div>
             </form>
         </div>
-
         <div class="result-rpt">
             <h3> Selected</h3>
             <div>
@@ -29,9 +28,10 @@
                 <br ng-repeat-end>
             </div>
         </div>
+        <button class="select-type" ng-click="sendSelectedId()">Send</button>
     </div>
+  
     <script type="text/javascript" src="~/Scripts/angular.min.js"></script>
-    @*<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.10/angular.min.js"></script>*@
     <script src="~/Scripts/app.js"></script>
     <script src="~/Scripts/HomeService.js"></script>
 
@@ -64,5 +64,25 @@
         flex-direction: column;
         align-items: flex-start;
     }
+
+    .select-type {
+        margin-inline-start: 70%;
+        padding: 20px 28px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        background-color: #007bff; 
+        color: #fff; 
+        border: none; 
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s; 
+    }
+    
+    .select-type:hover {
+            background-color: #0056b3; 
+    }
+
    
 </style>
